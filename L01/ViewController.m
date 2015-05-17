@@ -26,6 +26,7 @@
 }//Close #1
 //Test
 //做了一个页面的跳转变化
+//完成
 
 - (void)viewDidLoad {
     [super viewDidLoad];
