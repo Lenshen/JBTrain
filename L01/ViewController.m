@@ -24,7 +24,8 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 }//Close #1
-//Test 
+//Test
+//做了一个页面的跳转变化
 
 - (void)viewDidLoad {
     [super viewDidLoad];
