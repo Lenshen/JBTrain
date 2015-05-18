@@ -46,7 +46,26 @@
 //    numberLabel.frame = newNumberFrame;
 //    
 //    [boLabel addSubview:numberLabel];
-    
+    for (int i= 0; i<4; i++) {
+        BOUIView *myView = [[BOUIView alloc] init];
+        CGFloat x,y,width,height;
+        width = 140;
+        height = 260;
+        
+        int mod = i % 2;
+        if (mod == 0) {
+            x = 30;
+        }else{
+            x = 30 + mod * (80+100);
+        }
+        int mud = i / 2;
+            y = 30 + mud * (240+100);
+        
+        CGRect frame = CGRectMake(x, y, width, height);
+        myView.frame = frame;
+        [self.boScroolView addSubview:myView];
+        myView.backgroundColor = [UIColor redColor];
+    }
     
 }
 
