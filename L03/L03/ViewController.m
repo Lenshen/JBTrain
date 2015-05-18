@@ -69,7 +69,7 @@
         CGRect frame = CGRectMake(x, y, width, height);
         myView.frame = frame;
         [self.boScroolView addSubview:myView];
-        myView.backgroundColor = [UIColor redColor];
+        myView.backgroundColor = [UIColor yellowColor];
         
         UILabel *numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
         NSString *bo = [[NSString alloc]initWithFormat:@"%d",i];
@@ -89,8 +89,6 @@
         
     }
    
-
-    
 }
 
 - (void)didReceiveMemoryWarning {
