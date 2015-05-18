@@ -47,24 +47,24 @@
 //    
 //    [boLabel addSubview:numberLabel];
     CGRect bigRect = self.view.bounds;
-    bigRect.size.height *= 2.0;
+    bigRect.size.height *= 3.0;
     self.boScroolView.contentSize = bigRect.size;
     
     
-    for (int i= 0; i<6; i++) {
+    for (int i= 0; i<10; i++) {
         BOUIView *myView = [[BOUIView alloc] init];
         CGFloat x,y,width,height;
-        width = 140;
+        width = 110;
         height = 260;
         
         int mod = i % 2;
         if (mod == 0) {
-            x = 30;
+            x = 45;
         }else{
-            x = 30 + mod * (80+100);
+            x = 45 + mod * 180;
         }
         int mud = i / 2;
-            y = 30 + mud * (240+100);
+            y = 30 + mud * 340;
         
         CGRect frame = CGRectMake(x, y, width, height);
         myView.frame = frame;
@@ -75,6 +75,7 @@
         NSString *bo = [[NSString alloc]initWithFormat:@"%d",i];
         numberLabel.text = bo;
         numberLabel.font = [UIFont systemFontOfSize:100];
+        
         [numberLabel sizeToFit];
         
         CGRect myViewBounds = myView.bounds;
