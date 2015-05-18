@@ -14,6 +14,7 @@
 		1F1C83971B0988FB006AB00F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1C83961B0988FB006AB00F /* Images.xcassets */; };
 		1F1C839A1B0988FB006AB00F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F1C83981B0988FB006AB00F /* LaunchScreen.xib */; };
 		1F1C83A61B0988FB006AB00F /* L03Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1C83A51B0988FB006AB00F /* L03Tests.m */; };
+		1F1C83B11B098ABA006AB00F /* BOUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1C83B01B098ABA006AB00F /* BOUIView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		1F1C839F1B0988FB006AB00F /* L03Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = L03Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1C83A41B0988FB006AB00F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F1C83A51B0988FB006AB00F /* L03Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = L03Tests.m; sourceTree = "<group>"; };
+		1F1C83AF1B098ABA006AB00F /* BOUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOUIView.h; sourceTree = "<group>"; };
+		1F1C83B01B098ABA006AB00F /* BOUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOUIView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				1F1C83901B0988FB006AB00F /* ViewController.h */,
 				1F1C83911B0988FB006AB00F /* ViewController.m */,
 				1F1C83931B0988FB006AB00F /* Main.storyboard */,
+				1F1C83AF1B098ABA006AB00F /* BOUIView.h */,
+				1F1C83B01B098ABA006AB00F /* BOUIView.m */,
 				1F1C83961B0988FB006AB00F /* Images.xcassets */,
 				1F1C83981B0988FB006AB00F /* LaunchScreen.xib */,
 				1F1C83891B0988FB006AB00F /* Supporting Files */,
@@ -222,6 +227,7 @@
 				1F1C83921B0988FB006AB00F /* ViewController.m in Sources */,
 				1F1C838F1B0988FB006AB00F /* AppDelegate.m in Sources */,
 				1F1C838C1B0988FB006AB00F /* main.m in Sources */,
+				1F1C83B11B098ABA006AB00F /* BOUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

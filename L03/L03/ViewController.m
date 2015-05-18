@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "BOUIView.h"
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIScrollView *boScroolView;
 
 @end
 
