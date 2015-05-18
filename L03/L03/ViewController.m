@@ -46,10 +46,12 @@
 //    numberLabel.frame = newNumberFrame;
 //    
 //    [boLabel addSubview:numberLabel];
-    CGRect boScrollViewBounds = self.boScroolView.bounds;
-    boScrollViewBounds.size.height *= 2.0;
+    CGRect bigRect = self.view.bounds;
+    bigRect.size.height *= 2.0;
+    self.boScroolView.contentSize = bigRect.size;
     
-    for (int i= 0; i<4; i++) {
+    
+    for (int i= 0; i<6; i++) {
         BOUIView *myView = [[BOUIView alloc] init];
         CGFloat x,y,width,height;
         width = 140;
