@@ -74,6 +74,8 @@
         UILabel *numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
         NSString *bo = [[NSString alloc]initWithFormat:@"%d",i];
         numberLabel.text = bo;
+        numberLabel.font = [UIFont systemFontOfSize:100];
+        [numberLabel sizeToFit];
         
         CGRect myViewBounds = myView.bounds;
         CGRect numberLabelFrame = numberLabel.frame;
