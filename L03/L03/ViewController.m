@@ -46,6 +46,9 @@
 //    numberLabel.frame = newNumberFrame;
 //    
 //    [boLabel addSubview:numberLabel];
+    CGRect boScrollViewBounds = self.boScroolView.bounds;
+    boScrollViewBounds.size.height *= 2.0;
+    
     for (int i= 0; i<4; i++) {
         BOUIView *myView = [[BOUIView alloc] init];
         CGFloat x,y,width,height;
@@ -65,7 +68,26 @@
         myView.frame = frame;
         [self.boScroolView addSubview:myView];
         myView.backgroundColor = [UIColor redColor];
+        
+        UILabel *numberLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+        NSString *bo = [[NSString alloc]initWithFormat:@"%d",i];
+        numberLabel.text = bo;
+        
+        CGRect myViewBounds = myView.bounds;
+        CGRect numberLabelFrame = numberLabel.frame;
+        
+        
+        CGFloat numberLabelX = (myViewBounds.size.width - numberLabelFrame.size.width)/2.0;
+        CGFloat numberLabelY = (myViewBounds.size.height - numberLabelFrame.size.height)/2.0;
+        
+        CGRect newNumberFrame = CGRectMake(numberLabelX, numberLabelY, numberLabelFrame.size.width, numberLabelFrame.size.height);
+        numberLabel.frame = newNumberFrame;
+        
+        [myView addSubview:numberLabel];
+        
     }
+   
+
     
 }
 
