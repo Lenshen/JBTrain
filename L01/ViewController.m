@@ -19,7 +19,7 @@
 - (IBAction)button:(UIButton *)sender {
     self.label.text = @"123";
 }//完成
-
+//...
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
