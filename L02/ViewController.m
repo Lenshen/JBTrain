@@ -28,8 +28,7 @@
     [_nameLabel sizeToFit];
     
     // Do any additional setup after loading the view, typically from a nib.
-}
-
+}//做了改变
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
