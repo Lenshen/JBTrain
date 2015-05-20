@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
