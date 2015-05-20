@@ -63,7 +63,7 @@
         }else{
             x = 45 + mod * 180;
         }
-        int mud = i / 2;
+        int mud = floorf(i / 2);
             y = 30 + mud * 340;
         
         CGRect frame = CGRectMake(x, y, width, height);
