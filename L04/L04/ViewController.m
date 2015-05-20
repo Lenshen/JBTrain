@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong)UITableView *tableView;
+@property (nonatomic, strong)NSArray *studentsArray;
 
 @end
 
@@ -17,10 +21,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.tableView];
     
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(NSArray *)studentsArray{
+    if (!_studentsArray) {
+        _studentsArray = @[@"1",@"2",@"3",@"4",@"5",@"1",@"2",@"3",@"4",@"5",
+                           @"1",@"2",@"3",@"4",@"5",@"1",@"2",@"3",@"4",@"5",
+                           @"1",@"2",@"3",@"4",@"5"];
+    }
+    return _studentsArray;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.studentsArray.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    NSString *string = self.studentsArray[indexPath.row];
+    cell.textLabel.text = string;
+    
+    return cell;
+
 }
 
 - (void)didReceiveMemoryWarning {
