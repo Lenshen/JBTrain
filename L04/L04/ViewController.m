@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Student.h"
 
 @interface ViewController ()
 <UITableViewDelegate, UITableViewDataSource>
@@ -34,6 +35,7 @@
 
 -(NSArray *)studentsArray{
     if (!_studentsArray) {
+        
         _studentsArray = @[@"1",@"2",@"3",@"4",@"5",@"1",@"2",@"3",@"4",@"5",
                            @"1",@"2",@"3",@"4",@"5",@"1",@"2",@"3",@"4",@"5",
                            @"1",@"2",@"3",@"4",@"5"];

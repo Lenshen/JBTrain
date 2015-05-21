@@ -11,6 +11,14 @@
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
+        float s=1.0;
+        float x;
+        float y;
+        
+        x = ceilf(s / 3);
+        y = floorf(s / 3);
+        NSLog(@"x = %f",x);
+        NSLog(@"y = %f",y);
         
                 return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

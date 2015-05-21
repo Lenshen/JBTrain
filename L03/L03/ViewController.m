@@ -48,23 +48,39 @@
 //    [boLabel addSubview:numberLabel];
     CGRect bigRect = self.view.bounds;
     bigRect.size.height *= 3.0;
+//    bigRect.size.width *= 3.0;
     self.boScroolView.contentSize = bigRect.size;
     
     
-    for (int i= 0; i<10; i++) {
+    for (int i= 0; i<6; i++) {
         BOUIView *myView = [[BOUIView alloc] init];
         CGFloat x,y,width,height;
+        x = 50;
+        y = 50;
         width = 110;
         height = 260;
         
-        int mod = i % 2;
-        if (mod == 0) {
-            x = 45;
-        }else{
-            x = 45 + mod * 180;
-        }
-        int mud = floorf(i / 2);
-            y = 30 + mud * 340;
+        int mod = floorf(i / 2);
+        int mod2 = i % 2;
+        
+        if (!i == 0) {
+            
+            if (mod2 ==0) {
+                y = y + mod * (height +50);
+            }
+            else{
+                if (mod == 0) {
+                    x= x + (width +50);
+                }
+                else{
+                    x = x + (width +50);
+                    y = y + mod * (height +50);
+                }
+            
+            }
+
+        }        
+        
         
         CGRect frame = CGRectMake(x, y, width, height);
         myView.frame = frame;

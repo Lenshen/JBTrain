@@ -14,6 +14,7 @@
 		1F86E2921B0C2BB6007E33DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F86E2911B0C2BB6007E33DC /* Images.xcassets */; };
 		1F86E2951B0C2BB6007E33DC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F86E2931B0C2BB6007E33DC /* LaunchScreen.xib */; };
 		1F86E2A11B0C2BB6007E33DC /* L04Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F86E2A01B0C2BB6007E33DC /* L04Tests.m */; };
+		1FEA1C7A1B0C39A100251205 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEA1C791B0C39A100251205 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		1F86E29A1B0C2BB6007E33DC /* L04Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = L04Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F86E29F1B0C2BB6007E33DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F86E2A01B0C2BB6007E33DC /* L04Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = L04Tests.m; sourceTree = "<group>"; };
+		1FEA1C781B0C39A100251205 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		1FEA1C791B0C39A100251205 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				1F86E2891B0C2BB6007E33DC /* AppDelegate.m */,
 				1F86E28B1B0C2BB6007E33DC /* ViewController.h */,
 				1F86E28C1B0C2BB6007E33DC /* ViewController.m */,
+				1FEA1C781B0C39A100251205 /* Student.h */,
+				1FEA1C791B0C39A100251205 /* Student.m */,
 				1F86E28E1B0C2BB6007E33DC /* Main.storyboard */,
 				1F86E2911B0C2BB6007E33DC /* Images.xcassets */,
 				1F86E2931B0C2BB6007E33DC /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				1F86E28D1B0C2BB6007E33DC /* ViewController.m in Sources */,
 				1F86E28A1B0C2BB6007E33DC /* AppDelegate.m in Sources */,
 				1F86E2871B0C2BB6007E33DC /* main.m in Sources */,
+				1FEA1C7A1B0C39A100251205 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +422,7 @@
 				1F86E2A61B0C2BB6007E33DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F86E2A71B0C2BB6007E33DC /* Build configuration list for PBXNativeTarget "L04Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				1F86E2A91B0C2BB6007E33DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
